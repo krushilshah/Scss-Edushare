@@ -651,6 +651,13 @@ ul li::marker {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f77e53;
+  }
+  .navigation-bar a {
+    color: white;
   }
 }
 @media only screen and (max-width: 980px) {
@@ -666,6 +673,7 @@ ul li::marker {
     align-items: center;
     text-align: center;
     flex-direction: column;
+    margin-top: 8rem;
   }
   .universities-container {
     justify-content: center;

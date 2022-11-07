@@ -13,6 +13,13 @@
   .navigation-bar {
     @include for-center;
     flex-direction: column;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: $primary;
+    a{
+      color: $light-white;
+    }
   }
 }
 
@@ -27,6 +34,7 @@
   .hero-container {
     @include for-center;
     flex-direction: column;
+    margin-top: 8rem;
   }
   .universities-container {
     @include for-center;
