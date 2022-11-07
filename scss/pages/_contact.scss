@@ -1,0 +1,145 @@
+/*pricing container start here*/
+.pricing-header {
+	@include flex-2;
+	margin: 3rem 0;
+}
+.pricing-main-btn {
+	flex: 3;
+}
+
+.pricing-card {
+	@include flex-2;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+.card-box {
+	@include flex-1;
+	width: 305px;
+	height: 587px;
+	justify-content: center;
+	align-items: center;
+	
+}
+.pricetag-2 {
+	background: #fef0c3;
+	border-radius: 1rem;
+}
+.pricetag-3 {
+	border-radius: 1rem;
+	background: #fee6dc;
+}
+#amount {
+	flex: 1;
+	font-family: $font-family_1;
+	font-size: 2.5rem;
+	color: $dark-blue;
+	display: flex;
+	justify-content: center;
+	padding: 3.5rem;
+}
+
+#bluebox2 {
+	@include blue-bg-box;
+	background-color: $light-yellow;
+	font-family: $font-family_1;
+	
+}
+#bluebox3 {
+	@include blue-bg-box;
+	font-family: $font-family_1;
+	font-style: normal;
+	background: #f77e53;
+	
+}
+#bluebox-1 {
+	@include blue-bg-box;
+	background-color: $seconday-blue;
+	font-family: $font-family_1;
+	font-style: normal;
+	
+	
+}
+#points-cover-1 {
+	flex: 4;
+	height: 186px;
+}
+#points-cover-2 {
+	flex: 4;
+	height: 186px;
+	ul {
+		li {
+			&::marker {
+				color: $light-yellow;
+			}
+		}
+	}
+}
+ul {
+	li {
+		margin-top: 1rem;
+		color: $dark-blue4;
+		list-style-type: disc;
+		height: 24px;
+		font-family: $font-family_1;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1rem;
+		color: $grey-theme;
+		&::marker {
+			color: $seconday-blue;
+		}
+	}
+}
+#buyplan {
+	
+	flex: 3;
+	margin-top: 50px;
+}
+#buyplan2 {
+	flex: 3;
+	margin-top: 50px;
+	
+}
+#points-cover-3 {
+	flex: 4;
+	height: 186px;
+	ul {
+		li {
+			&::marker {
+				color: $primary;
+			}
+		}
+	}
+}
+#buyplan3 {
+	flex: 3;
+	margin-top: 50px;
+	
+}
+#pbtn {
+	@include blue-btn;
+	@include button-data;
+	float: right;
+  }
+#planbtn {
+	@include button-data;
+	@include price-btn;
+	background-color: $light-white;
+	color: $seconday-blue;
+  }
+  
+  #planbtn2 {
+	@include button-data;
+	@include price-btn;
+	background-color: $light-yellow;
+	color: $dark-blue;
+  }
+  #planbtn3 {
+	@include button-data;
+	@include price-btn;
+	background-color: $primary;
+	color: $light-white;
+  }

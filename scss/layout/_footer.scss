@@ -1,0 +1,26 @@
+.footer-container {
+	@include footer-container;
+	margin: 3rem 0;
+	ul {
+		li {
+			list-style-type: none;
+			&:nth-child(1) {
+				text-decoration: none;
+				color: $dark-blue4;
+			}
+		}
+	}
+	b {
+		&:hover {
+			color: $seconday-blue;
+		}
+	}
+}
+li {
+	&:hover {
+		color: $seconday-blue;
+	}
+}
+#copyright {
+	font-size: 1.1rem;
+}

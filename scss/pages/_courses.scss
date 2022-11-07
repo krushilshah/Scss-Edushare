@@ -1,0 +1,109 @@
+/*course section -------------------*/
+
+.course-container {
+	@include course-grid;
+}
+.course-head {
+	h2 {
+		grid-area: heading;
+	}
+}
+.card-1 {
+	grid-area: card1;
+}
+.card-2 {
+	grid-area: card2;
+}
+.card-3 {
+	grid-area: card3;
+}
+.course-card {
+	margin: 50px 0 0px 70px;
+	width: 270px;
+	height: 390px;
+	background: #ffffff;
+	box-shadow: 0px 20px 35px -5px rgba(0, 0, 0, 0.03);
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.cart1-data {
+	font-family: $font-family_2;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 22px;
+	letter-spacing: -0.01em;
+	color: $grey-theme;
+	margin-top: 18px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+#courses {
+	margin: 5rem 0;
+}
+.fa-users ,.fa-clock{
+	color: $primary;
+}
+.add-btn {
+	@include button-data;
+	width: 240px;
+	height: 40px;
+	border: 1px solid #2076ff;
+	border-radius: 7px;
+	color: $seconday-blue;
+	background-color: $light-white;
+  }
+  #blueaddtocart {
+	background-color: $seconday-blue;
+	color: $light-white;
+  }
+  .course-btn {
+	@include button-data;
+	@include blue-btn;
+	> a {
+	  text-decoration: none;
+	  color: $seconday-blue;
+	}
+	grid-area: button;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	margin: 0 auto;
+  }
+/*features container start here*/
+
+.features-container {
+    width: 100%;
+	background-color: $light-white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	h2 {
+        margin: 2rem 0;
+	}
+	>p {
+        font-size: 0.1rem;
+		margin: 2.5rem 0;
+	}
+}
+#features {
+    display: grid;
+}
+.review-comments {
+    display: flex;
+	justify-content: space-around;
+	padding: 0 5rem;
+	b {
+        font-size: 1rem;
+	}
+	p {
+        font-size: 1rem;
+	}
+}
+.review-heading {
+    margin: 2.5rem 0;
+	display: flex;
+}
+

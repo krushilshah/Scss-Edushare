@@ -1,0 +1,16 @@
+ /*root elements declaration */
+
+* {
+	box-sizing: border-box;
+	margin: 0%;
+	padding: 0%;
+	transition: $transition;
+}
+html {
+	scroll-behavior: smooth;
+	font-size: 18px;
+}
+body {
+	margin: 0.5rem auto;
+	max-width: 1180px;
+}

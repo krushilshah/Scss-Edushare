@@ -1,0 +1,36 @@
+/* learning container part start */
+
+
+.learning-container {
+   @include learning-grid;
+	p {
+		font-size: 1rem;
+	}
+}
+#box1 {
+	grid-area: imga;
+}
+#box2 {
+	grid-area: how;
+}
+#box3 {
+	grid-area: gri1;
+}
+#box4 {
+	grid-area: gri2;
+}
+#box5 {
+	grid-area: gri3;
+}
+#box6 {
+	grid-area: gri4;
+}
+.icon-learning {
+	background: #d2f1e1;
+	border-radius: 16px;
+	width: 70px;
+	height: 70px;
+	img {
+		margin: 1rem;
+	}
+}

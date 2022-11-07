@@ -1,0 +1,34 @@
+/*typography--declaration--common--- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+b {
+  font-style: normal;
+  font-family: $font-family_1;
+}
+h1 {
+  font-size: 3.6rem;
+  color: $dark-blue;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+b {
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: $dark-blue;
+}
+p {
+  font-family: $font-family_2;
+   font-style: normal;
+  font-size: 1.5rem;
+  color: $grey-theme;
+}

@@ -1,0 +1,18 @@
+// variables declaration common ------------------------
+
+$primary: #f77e53 !default;
+$seconday-blue: #2378ff !default;
+$light-white: white !default;
+$light-yellow: #f6c07a !default; 
+$dark-blue4: black !default;
+$dark-blue: #101130 !default;
+$grey-theme: #606176 !default;
+
+
+// font family
+$font-family_1: "Inter" !default;
+$font-family_2: "Roboto" !default;
+@import "https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap";
+
+// trans---
+$transition: 0.3s ease-in; 

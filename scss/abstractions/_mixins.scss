@@ -1,0 +1,85 @@
+// universities section  =-----
+
+@mixin button-data {
+  border-radius: 1rem;
+  font-family: $font-family_1;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-style: normal;
+  line-height: 1.1rem;
+
+  &:hover {
+    box-shadow: 3px 3px gray;
+    background-color: $primary;
+    color: $dark-blue;
+  }
+}
+
+@mixin blue-btn {
+  border: 1px solid #2076ff;
+  background: #ffffff;
+  width: 180px;
+  height: 60px;
+  color: $seconday-blue;
+}
+@mixin price-btn {
+  width: 260px;
+  height: 70px;
+  border: 1px solid #f6c07a;
+  font-weight: 600;
+  flex: 1;
+}
+@mixin flex-1 {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-2 {
+  display: flex;
+	flex-direction: row;
+}
+@mixin universities-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+@mixin learning-grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: "imga how how" " imga gri1 gri2 " " imga gri3 gri4 ";
+}
+
+@mixin course-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 30% 1fr;
+	grid-template-areas: "heading heading button" "card1 card2 card3";
+}
+@mixin footer-container{
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 1fr;
+  column-gap: 5rem;
+}
+
+@mixin blue-bg-box{
+  flex: 1;
+	width: 305px;
+	height: 100px;
+  font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 38px;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  color: $light-white;
+}
+@mixin for-center{
+  justify-content: center;
+		align-items: center;
+		text-align: center;
+}

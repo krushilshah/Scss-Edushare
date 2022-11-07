@@ -1,0 +1,42 @@
+/*navigation start here */
+
+.navigation-bar {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+nav {
+    ul {
+        li {
+            list-style-type: none;
+			float: left;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $dark-blue;
+		margin: 0 1rem;
+		font-family: $font-family_2;
+        &:hover {
+            color: $primary;
+            text-decoration-line: underline;
+        }
+	}
+}
+.nav-btn {
+	width: 125px;
+	height: 50px;
+	background: #e8f1ff;
+	text-align: center;
+	line-height: 1.2rem;
+	color: $seconday-blue;
+	font-size: 1rem;
+	&:hover {
+		background-color: $seconday-blue;
+		color: $light-white;
+	}
+}
+
