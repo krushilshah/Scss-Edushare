@@ -103,8 +103,13 @@ nav a {
 }
 nav a:hover {
   color: #f77e53;
+  background-color: white;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 20px;
 }
 
 .nav-btn {
@@ -646,6 +651,9 @@ ul li::marker {
   .nav-btn {
     display: none;
   }
+  .logo {
+    display: none;
+  }
   .navigation-bar {
     justify-content: center;
     align-items: center;
@@ -673,7 +681,7 @@ ul li::marker {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 8rem;
+    margin-top: 4.5rem;
   }
   .universities-container {
     justify-content: center;

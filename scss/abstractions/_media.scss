@@ -10,6 +10,9 @@
   .nav-btn {
     display: none;
   }
+  .logo{
+    display: none;
+  }
   .navigation-bar {
     @include for-center;
     flex-direction: column;
@@ -34,7 +37,7 @@
   .hero-container {
     @include for-center;
     flex-direction: column;
-    margin-top: 8rem;
+    margin-top: 4.5rem;
   }
   .universities-container {
     @include for-center;
