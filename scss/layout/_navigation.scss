@@ -1,11 +1,11 @@
+@use "sass:map";
 /*navigation start here */
-
 .navigation-bar {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	
+
 }
 
 nav {
@@ -13,6 +13,7 @@ nav {
         li {
             list-style-type: none;
 			float: left;
+			
 		}
 	}
 	a {
@@ -22,22 +23,25 @@ nav {
 		font-family: $font-family_2;
         &:hover {
             color: $primary;
-			background-color: $light-white;
             text-decoration-line: underline;
+			background-color: $light-white;
 			padding-top: 15px ;
 			padding-bottom: 10px;
-			padding-left: 25px;
-			padding-right: 20px;
+			padding-left: 22px;
+			padding-right: 22px;
+			
+			
         }
 	}
 }
 .nav-btn {
-	width: 125px;
+	// @include button--colors( $background :$grey-theme , $color:$seconday-blue);
+	background-color: map-get($map: $colors, $key:"orange" );
+	width: map-get($map: $btn-width, $key:"nav" );
 	height: 50px;
-	background: #e8f1ff;
 	text-align: center;
 	line-height: 1.2rem;
-	color: $seconday-blue;
+	
 	font-size: 1rem;
 	&:hover {
 		background-color: $seconday-blue;

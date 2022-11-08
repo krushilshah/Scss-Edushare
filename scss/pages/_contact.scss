@@ -43,7 +43,7 @@
 
 #bluebox2 {
 	@include blue-bg-box;
-	background-color: $light-yellow;
+	 background-color: $light-yellow;
 	font-family: $font-family_1;
 	
 }
@@ -121,25 +121,24 @@ ul {
 }
 #pbtn {
 	@include blue-btn;
-	@include button-data;
+	@extend .button-data;
 	float: right;
   }
 #planbtn {
-	@include button-data;
+	@extend .button-data;
 	@include price-btn;
-	background-color: $light-white;
-	color: $seconday-blue;
+	@include button--colors( $light-white,$seconday-blue );
+
   }
   
   #planbtn2 {
-	@include button-data;
+	@extend .button-data;
 	@include price-btn;
-	background-color: $light-yellow;
-	color: $dark-blue;
+	@include button--colors( $light-yellow,$dark-blue );
+
   }
   #planbtn3 {
-	@include button-data;
+	@extend .button-data;
 	@include price-btn;
-	background-color: $primary;
-	color: $light-white;
+	@include button--colors();
   }

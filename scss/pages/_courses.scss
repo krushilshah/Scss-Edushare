@@ -48,20 +48,19 @@
 	color: $primary;
 }
 .add-btn {
-	@include button-data;
-	width: 240px;
+	@extend .button-data;
+	@include button--colors( $background :$light-white , $color:$seconday-blue );
+	width: map-get($map: $btn-width, $key:"courses" );
 	height: 40px;
 	border: 1px solid #2076ff;
 	border-radius: 7px;
-	color: $seconday-blue;
-	background-color: $light-white;
-  }
-  #blueaddtocart {
-	background-color: $seconday-blue;
-	color: $light-white;
+}
+#blueaddtocart {
+	@include button--colors( $background :$seconday-blue, $color:$light-white );
+	
   }
   .course-btn {
-	@include button-data;
+	@extend .button-data;
 	@include blue-btn;
 	> a {
 	  text-decoration: none;

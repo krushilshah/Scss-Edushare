@@ -1,7 +1,8 @@
 /* hero section start here */
 
-// variable overridding
-// $primary:aqua;
+
+
+
 
 .hero-container {
   display: flex;
@@ -16,12 +17,12 @@
   }
 }
 #hero-btn {
-  @include button-data;
+  @extend .button-data;
+  @include button--colors();
   margin-top: 1rem;
-  background: $primary;
-  width: 200px;
+  width: map-get($map: $btn-width, $key:"home" );
   height: 62px;
-  color: $light-white;
+
 }
 
 .universities-container {

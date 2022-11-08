@@ -65,7 +65,7 @@ section {
 }
 
 /*button---- */
-button {
+.button-data, #planbtn3, #planbtn2, #planbtn, #pbtn, .course-btn, .add-btn, #hero-btn, button {
   border-radius: 1rem;
   font-family: "Inter";
   font-size: 1rem;
@@ -74,13 +74,16 @@ button {
   letter-spacing: -0.01em;
   font-style: normal;
   line-height: 1.1rem;
-  border: none;
-  font-weight: 600;
 }
-button:hover {
+.button-data:hover, #planbtn3:hover, #planbtn2:hover, #planbtn:hover, #pbtn:hover, .course-btn:hover, .add-btn:hover, #hero-btn:hover, button:hover {
   box-shadow: 3px 3px gray;
   background-color: #f77e53;
   color: #101130;
+}
+
+button {
+  border: none;
+  font-weight: 600;
 }
 
 /*navigation start here */
@@ -103,22 +106,21 @@ nav a {
 }
 nav a:hover {
   color: #f77e53;
-  background-color: white;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  background-color: white;
   padding-top: 15px;
   padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 20px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .nav-btn {
+  background-color: #fd7e14;
   width: 125px;
   height: 50px;
-  background: #e8f1ff;
   text-align: center;
   line-height: 1.2rem;
-  color: #2378ff;
   font-size: 1rem;
 }
 .nav-btn:hover {
@@ -169,24 +171,11 @@ li:hover {
 }
 
 #hero-btn {
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
+  background-color: #f77e53;
+  color: white;
   margin-top: 1rem;
-  background: #f77e53;
   width: 200px;
   height: 62px;
-  color: white;
-}
-#hero-btn:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
 }
 
 .universities-container {
@@ -307,25 +296,12 @@ li:hover {
 }
 
 .add-btn {
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
+  background-color: white;
+  color: #2378ff;
   width: 240px;
   height: 40px;
   border: 1px solid #2076ff;
   border-radius: 7px;
-  color: #2378ff;
-  background-color: white;
-}
-.add-btn:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
 }
 
 #blueaddtocart {
@@ -334,28 +310,15 @@ li:hover {
 }
 
 .course-btn {
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
+  background-color: white;
+  color: #2378ff;
   border: 1px solid #2076ff;
-  background: #ffffff;
   width: 180px;
   height: 60px;
-  color: #2378ff;
   grid-area: button;
   grid-column-start: 3;
   grid-column-end: 4;
   margin: 0 auto;
-}
-.course-btn:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
 }
 .course-btn > a {
   text-decoration: none;
@@ -460,7 +423,6 @@ li:hover {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   text-align: center;
-  color: white;
   background-color: #f6c07a;
   font-family: "Inter";
 }
@@ -476,7 +438,6 @@ li:hover {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   text-align: center;
-  color: white;
   font-family: "Inter";
   font-style: normal;
   background: #f77e53;
@@ -493,7 +454,6 @@ li:hover {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   text-align: center;
-  color: white;
   background-color: #2378ff;
   font-family: "Inter";
   font-style: normal;
@@ -551,36 +511,15 @@ ul li::marker {
 }
 
 #pbtn {
+  background-color: white;
+  color: #2378ff;
   border: 1px solid #2076ff;
-  background: #ffffff;
   width: 180px;
   height: 60px;
-  color: #2378ff;
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
   float: right;
-}
-#pbtn:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
 }
 
 #planbtn {
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
   width: 260px;
   height: 70px;
   border: 1px solid #f6c07a;
@@ -589,21 +528,8 @@ ul li::marker {
   background-color: white;
   color: #2378ff;
 }
-#planbtn:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
-}
 
 #planbtn2 {
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
   width: 260px;
   height: 70px;
   border: 1px solid #f6c07a;
@@ -612,21 +538,8 @@ ul li::marker {
   background-color: #f6c07a;
   color: #101130;
 }
-#planbtn2:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
-}
 
 #planbtn3 {
-  border-radius: 1rem;
-  font-family: "Inter";
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: -0.01em;
-  font-style: normal;
-  line-height: 1.1rem;
   width: 260px;
   height: 70px;
   border: 1px solid #f6c07a;
@@ -634,11 +547,6 @@ ul li::marker {
   flex: 1;
   background-color: #f77e53;
   color: white;
-}
-#planbtn3:hover {
-  box-shadow: 3px 3px gray;
-  background-color: #f77e53;
-  color: #101130;
 }
 
 /*media query start here */
