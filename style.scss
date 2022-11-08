@@ -1,0 +1,12 @@
+@use  'card';
+$primary-color:red;
+
+body{
+    display: flex;
+    background-color: $primary-color;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
