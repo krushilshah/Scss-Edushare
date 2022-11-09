@@ -232,6 +232,7 @@ nav a:hover {
 /*course section -------------------*/
 .course-container {
   display: grid;
+  gap: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30% 1fr;
   grid-template-areas: "heading heading button" "card1 card2 card3";
@@ -243,17 +244,29 @@ nav a:hover {
 
 .card-1 {
   grid-area: card1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-2 {
   grid-area: card2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-3 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   grid-area: card3;
 }
 
 .course-card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 270px;
   height: 390px;
   background: #ffffff;

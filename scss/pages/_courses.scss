@@ -2,6 +2,7 @@
 
 .course-container {
 	display: grid;
+    gap: 15px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 30% 1fr;
 	grid-template-areas: "heading heading button" "card1 card2 card3";}
@@ -12,14 +13,18 @@
 }
 .card-1 {
 	grid-area: card1;
+	@include for-center;
 }
 .card-2 {
 	grid-area: card2;
+	@include for-center;
 }
 .card-3 {
+	@include for-center;
 	grid-area: card3;
 }
 .course-card {
+	@include for-center;
 	width: 270px;
 	height: 390px;
 	background: #ffffff;
