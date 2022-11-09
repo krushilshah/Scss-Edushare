@@ -2,7 +2,11 @@
 
 
 .learning-container {
-   @include learning-grid;
+	display: grid;
+	gap: 5px;
+	grid-template-columns: 40% 30% 30%;
+	grid-template-rows: 20% 40% 40%;
+	grid-template-areas: "imga how how" " imga gri1 gri2 " " imga gri3 gri4 ";
 	p {
 		font-size: 1rem;
 	}

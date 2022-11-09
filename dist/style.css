@@ -86,6 +86,27 @@ button {
   font-weight: 600;
 }
 
+.blue-bg-box, #bluebox-1, #bluebox3, #bluebox2 {
+  flex: 1;
+  width: 305px;
+  height: 100px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 38px;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+}
+
+.price-btn, #planbtn3, #planbtn2, #planbtn {
+  width: 260px;
+  height: 70px;
+  border: 1px solid #f6c07a;
+  font-weight: 600;
+  flex: 1;
+}
+
 /*navigation start here */
 .navigation-bar {
   display: flex;
@@ -109,10 +130,6 @@ nav a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   background-color: white;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 22px;
-  padding-right: 22px;
 }
 
 .nav-btn {
@@ -126,32 +143,6 @@ nav a:hover {
 .nav-btn:hover {
   background-color: #2378ff;
   color: white;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: 25% 1fr 1fr 1fr;
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-  margin: 3rem 0;
-}
-.footer-container ul li {
-  list-style-type: none;
-}
-.footer-container ul li:nth-child(1) {
-  text-decoration: none;
-  color: black;
-}
-.footer-container b:hover {
-  color: #2378ff;
-}
-
-li:hover {
-  color: #2378ff;
-}
-
-#copyright {
-  font-size: 1.1rem;
 }
 
 /* hero section start here */
@@ -263,7 +254,6 @@ li:hover {
 }
 
 .course-card {
-  margin: 50px 0 0px 70px;
   width: 270px;
   height: 390px;
   background: #ffffff;
@@ -312,8 +302,8 @@ li:hover {
 .course-btn {
   background-color: white;
   color: #2378ff;
-  border: 1px solid #2076ff;
   width: 180px;
+  border: 1px solid #2076ff;
   height: 60px;
   grid-area: button;
   grid-column-start: 3;
@@ -413,47 +403,17 @@ li:hover {
 }
 
 #bluebox2 {
-  flex: 1;
-  width: 305px;
-  height: 100px;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 38px;
-  padding: 30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  text-align: center;
   background-color: #f6c07a;
   font-family: "Inter";
 }
 
 #bluebox3 {
-  flex: 1;
-  width: 305px;
-  height: 100px;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 38px;
-  padding: 30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  text-align: center;
   font-family: "Inter";
   font-style: normal;
   background: #f77e53;
 }
 
 #bluebox-1 {
-  flex: 1;
-  width: 305px;
-  height: 100px;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 38px;
-  padding: 30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  text-align: center;
   background-color: #2378ff;
   font-family: "Inter";
   font-style: normal;
@@ -513,40 +473,51 @@ ul li::marker {
 #pbtn {
   background-color: white;
   color: #2378ff;
-  border: 1px solid #2076ff;
   width: 180px;
+  border: 1px solid #2076ff;
   height: 60px;
   float: right;
 }
 
 #planbtn {
-  width: 260px;
-  height: 70px;
-  border: 1px solid #f6c07a;
-  font-weight: 600;
-  flex: 1;
   background-color: white;
   color: #2378ff;
 }
 
 #planbtn2 {
-  width: 260px;
-  height: 70px;
-  border: 1px solid #f6c07a;
-  font-weight: 600;
-  flex: 1;
   background-color: #f6c07a;
   color: #101130;
 }
 
 #planbtn3 {
-  width: 260px;
-  height: 70px;
-  border: 1px solid #f6c07a;
-  font-weight: 600;
-  flex: 1;
   background-color: #f77e53;
   color: white;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 1fr;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  margin: 3rem 0;
+}
+.footer-container ul li {
+  list-style-type: none;
+}
+.footer-container ul li:nth-child(1) {
+  text-decoration: none;
+  color: black;
+}
+.footer-container b:hover {
+  color: #2378ff;
+}
+
+li:hover {
+  color: #2378ff;
+}
+
+#copyright {
+  font-size: 1.1rem;
 }
 
 /*media query start here */
@@ -605,6 +576,8 @@ ul li::marker {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 5px;
+    padding: 5px 0;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20%);
     grid-template-areas: "how" "imga" "imga" "gri1" "gri2" "gri3" "gri4";
@@ -618,10 +591,10 @@ ul li::marker {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 5% 1fr 1fr 1fr;
     grid-template-areas: "heading" "button" "card1" "card2" "card3" "card3";
-    justify-items: center;
     margin-top: 30rem;
+    grid-template-rows: 10% 5% 1fr 1fr 1fr;
+    justify-items: center;
   }
   .course-btn {
     grid-row-start: 2;
@@ -642,10 +615,6 @@ ul li::marker {
   }
   .features-container > p {
     margin-top: 2.5rem 0;
-  }
-  #features {
-    margin-top: 20rem;
-    display: grid;
   }
   .review-comments {
     justify-content: center;

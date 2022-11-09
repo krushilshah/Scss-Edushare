@@ -1,0 +1,23 @@
+
+
+// common elements in class 
+.blue-bg-box {
+  flex: 1;
+  width: 305px;
+  height: 100px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 38px;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+}
+
+.price-btn {
+    width: map-get($map: $btn-width, $key:"price-btn" );
+    height: 70px;
+    border: 1px solid #f6c07a;
+    font-weight: 600;
+    flex: 1;
+  }

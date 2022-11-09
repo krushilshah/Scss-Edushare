@@ -1,1 +1,20 @@
+// overide-----
+
+
+// color --- 
 $primary: #f77e53; 
+$seconday-blue: #2378ff;
+
+
+// -------font
+$font-family_1: "Inter" ;
+$font-family_2: "Roboto" ;
+
+// buttons width --map override
+$btn-width: (
+  "home": 200px,
+  "nav": 125px,
+  "courses": 240px,
+  "bluebtn": 180px,
+  "price-btn": 260px,
+) ;

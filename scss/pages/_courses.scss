@@ -1,8 +1,10 @@
 /*course section -------------------*/
 
 .course-container {
-	@include course-grid;
-}
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 30% 1fr;
+	grid-template-areas: "heading heading button" "card1 card2 card3";}
 .course-head {
 	h2 {
 		grid-area: heading;
@@ -18,7 +20,6 @@
 	grid-area: card3;
 }
 .course-card {
-	margin: 50px 0 0px 70px;
 	width: 270px;
 	height: 390px;
 	background: #ffffff;
@@ -86,6 +87,7 @@
         font-size: 0.1rem;
 		margin: 2.5rem 0;
 	}
+	
 }
 #features {
     display: grid;

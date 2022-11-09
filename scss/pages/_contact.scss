@@ -1,14 +1,16 @@
 /*pricing container start here*/
 .pricing-header {
-	@include flex-2;
-	margin: 3rem 0;
+	display: flex;
+	flex-direction: row;
+		margin: 3rem 0;
 }
 .pricing-main-btn {
 	flex: 3;
 }
 
 .pricing-card {
-	@include flex-2;
+	display: flex;
+	flex-direction: row;	
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: space-between;
@@ -16,7 +18,8 @@
 	margin: auto;
 }
 .card-box {
-	@include flex-1;
+	display: flex;
+	flex-direction: column;
 	width: 305px;
 	height: 587px;
 	justify-content: center;
@@ -42,20 +45,20 @@
 }
 
 #bluebox2 {
-	@include blue-bg-box;
-	 background-color: $light-yellow;
+	@extend .blue-bg-box;
+	background-color: $light-yellow;
 	font-family: $font-family_1;
 	
 }
 #bluebox3 {
-	@include blue-bg-box;
+	@extend .blue-bg-box;
 	font-family: $font-family_1;
 	font-style: normal;
 	background: #f77e53;
 	
 }
 #bluebox-1 {
-	@include blue-bg-box;
+	@extend .blue-bg-box;
 	background-color: $seconday-blue;
 	font-family: $font-family_1;
 	font-style: normal;
@@ -126,19 +129,19 @@ ul {
   }
 #planbtn {
 	@extend .button-data;
-	@include price-btn;
+	@extend .price-btn;
 	@include button--colors( $light-white,$seconday-blue );
 
   }
   
   #planbtn2 {
 	@extend .button-data;
-	@include price-btn;
+	@extend .price-btn;
 	@include button--colors( $light-yellow,$dark-blue );
 
   }
   #planbtn3 {
 	@extend .button-data;
-	@include price-btn;
+	@extend .price-btn;
 	@include button--colors();
   }

@@ -1,17 +1,15 @@
 /* hero section start here */
 
-
-
-
-
 .hero-container {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 .hero-main-content {
-  @include flex-1;
-  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column; 
+   margin-bottom: 1.1rem;
+
   > p {
     margin-top: 1rem;
   }
@@ -26,8 +24,9 @@
 }
 
 .universities-container {
-  @include universities-grid;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;  align-items: center;
   width: 100%;
   .university-content {
     margin: 0 auto;

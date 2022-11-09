@@ -1,5 +1,7 @@
 .footer-container {
-	@include footer-container;
+	display: grid;
+	grid-template-columns: 25% 1fr 1fr 1fr;
+	column-gap: 5rem;
 	margin: 3rem 0;
 	ul {
 		li {

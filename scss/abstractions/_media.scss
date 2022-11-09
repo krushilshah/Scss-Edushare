@@ -50,7 +50,9 @@
   }
   .learning-container {
     @include for-center;
-    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 5px 0;
+    grid-template-columns: 1fr ;
     grid-template-rows: repeat(6, 20%);
     grid-template-areas: "how" "imga" "imga" "gri1" "gri2" "gri3" "gri4";
   }
@@ -61,10 +63,10 @@
     @include for-center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 5% 1fr 1fr 1fr;
     grid-template-areas: "heading" "button" "card1" "card2" "card3" "card3";
-    justify-items: center;
     margin-top: 30rem;
+    grid-template-rows: 10% 5% 1fr 1fr 1fr;
+    justify-items: center;
   }
   .course-btn {
     grid-row-start: 2;
@@ -86,10 +88,7 @@
       margin-top: 2.5rem 0;
     }
   }
-  #features {
-    margin-top: 20rem;
-    display: grid;
-  }
+  
   .review-comments {
     @include for-center;
     flex-direction: column;
